@@ -29,7 +29,7 @@
     
     <div data-role="content" style="padding: 15px">
         
-        <form action="">
+        <form id="brdftcalc" action="">
             
             <div data-role="fieldcontain">
                 <label for="selectmenu3">Wood Species (optional):</label>
@@ -58,15 +58,19 @@
             
             <div data-role="fieldcontain">
                 <fieldset data-role="controlgroup">
-                    <label for="textinput4">Width:</label>
+                    <label for="textinput4" data-clear-btn="true">Width (in):</label>
                     <input name="width" id="width" placeholder="" value="" type="text">
                 </fieldset>
             </div>
             
             <div data-role="fieldcontain">
                 <fieldset data-role="controlgroup">
-                    <label for="textinput5">Length:</label>
-                    <input name="length" id="length" placeholder="" value="" type="text">
+                    <label for="textinput5" data-clear-btn="true">Length (ft):</label>
+                    <input name="length" id="length_ft" placeholder="" value="" type="text">
+                </fieldset>
+                <fieldset data-role="controlgroup">
+                    <label for="textinput5" data-clear-btn="true">Length (in):</label>
+                    <input name="length" id="length_in" placeholder="" value="" type="text">
                 </fieldset>
             </div>
             
@@ -111,7 +115,7 @@
         </div>
         
         <div class="ui-block-b">
-            <input type="submit" data-theme="a" data-icon="delete" data-iconpos="left" value="Clear">
+            <input type="submit" id="clear" data-theme="a" data-icon="delete" data-iconpos="left" value="Clear">
         </div>
         
     </div>
