@@ -7,12 +7,16 @@ $('#calc').click(function() {
         price = $('#price').val(),
 		length_t = parseInt(length_ft) + parseInt(length_in);
 	
-//	if (length_ft == '') {
-//		$('#length_ft').val(0);
-//	}
-//	else if (length_in == '') {
-//		$('#length_in').val(0);
-//	}
+
+	/*
+if (length_ft == '') {
+		$('#length_ft').val(0);
+	}
+	else if (length_in == '') {
+		$('#length_in').val(0);
+	}
+*/
+
 	
 	//compute board foot
 	board_foot = ((thick * width * length_t * quantity) / 144).toFixed(2);
