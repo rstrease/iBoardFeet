@@ -16,7 +16,6 @@ $('#calc').click(function() {
 	
 	//compute board foot
 	board_foot = ((thick * width * length_t * quantity) / 144).toFixed(2);
-	
 	//compute board foot price
 	board_foot_price = (price * board_foot).toFixed(2);
 
