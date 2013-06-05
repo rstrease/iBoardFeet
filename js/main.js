@@ -35,4 +35,6 @@ $('#clear').click(function() {
 	$('form#brdftcalc')[0].reset();
 	$('#selectmenu3').val('selection').selectmenu('refresh');
 	$('#thickness').val('selection').selectmenu('refresh');
+	$('#total_boardfeet').val('');
+	$('#total_boardfeet_price').val('');
 });
